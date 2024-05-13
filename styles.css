@@ -425,3 +425,20 @@ footer {
   padding: 10px 0;
 }
 /*****************anything related to the footer**************/
+/***********************media queries*************************/
+@media screen and (max-width: 1024px) {
+
+  /**navbar**/
+  header {
+    justify-content: center;
+  }
+  /**main container**/
+  .page-container {
+    margin: 0 4rem 0 4rem;
+  }
+
+  .name {
+    margin: 0 0 2rem 0;
+  }
+
+}
