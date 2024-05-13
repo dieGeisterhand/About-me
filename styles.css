@@ -513,9 +513,11 @@ footer {
 
   .name {
     font-size: 3rem;
+    margin: 1rem;
   }
   .subtitle {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: normal;
     margin: 0 2rem 0 2rem;
   }
 
@@ -547,10 +549,6 @@ footer {
   /**projects-panel**/
   .projects-container {
     padding: 1rem;
-  }
-
-  .projects-title {
-    margin: 1rem;
   }
 
   .item-box {
