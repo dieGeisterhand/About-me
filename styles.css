@@ -85,6 +85,7 @@ a {
   padding: 10px 0px 10px 0px;
   width: 220px;
 }
+
 /**********************navigation bar**********************/
 /**********************main container**********************/
 .about-container {
@@ -492,18 +493,13 @@ footer {
     font-weight: normal;
   }
 
-  .background-extra {
-    font-size: 1.4rem;
-    margin: 0;
-  }
-
   .division-1 {
-    margin-top: 200px;
+    margin-top: 150px;
   }
 
   /**projects panel**/
   .name {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -571,3 +567,5 @@ footer {
 @media screen and (max-width: 650px) {
 
 }
+
+
