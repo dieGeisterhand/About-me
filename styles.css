@@ -49,7 +49,7 @@ header {
 
 .navigation-ul {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   padding-inline-start: 0;
@@ -62,7 +62,6 @@ header {
   font-weight: 700;
   padding: 0;
   display: block;
-  width: 220px;
   text-align: center;
 }
 
@@ -170,6 +169,8 @@ a {
 
 .background-title {
   text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .left-panel {
@@ -222,7 +223,8 @@ a {
   font-size: 15px;
 }
 
-.imadivision {
+.division-1,
+.division-2 {
   margin: 50px 0 50px 0;
   border-bottom: 2px dashed var(--general-use-white);
 }
@@ -230,6 +232,8 @@ a {
 .resume-area {
   text-align: center;
   margin: -50 0 0 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .resume-button {
@@ -426,19 +430,62 @@ footer {
 }
 /*****************anything related to the footer**************/
 /***********************media queries*************************/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 
   /**navbar**/
   header {
     justify-content: center;
   }
-  /**main container**/
+  /**main panel**/
   .page-container {
-    margin: 0 4rem 0 4rem;
+    margin: 0 6rem;
   }
 
   .name {
     margin: 0 0 2rem 0;
   }
+  /**background panel**/
+  .background-container {
+    padding: 0;
+  }
 
+  .background-title {
+    font-size: 1.5rem;
+  }
+  
+  .background-subtitle {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .right-panel,
+  .left-panel {
+    padding: 2rem;
+  }
+
+  .work-place {
+    font-size: 1.2rem;
+  }
+
+  .bg {
+    font-size: 0.9rem;
+  }
+
+  .cert {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .issuer {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .background-extra {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .division-1 {
+    margin-top: 200px;
+  }
 }
