@@ -47,9 +47,13 @@ header {
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
 }
 
+nav {
+  width: 100%;
+}
+
 .navigation-ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   flex-wrap: wrap;
   align-items: center;
   padding-inline-start: 0;
@@ -62,6 +66,7 @@ header {
   font-weight: 700;
   padding: 0;
   display: block;
+  width: 220px;
   text-align: center;
 }
 
@@ -169,6 +174,9 @@ a {
 
 .background-title {
   text-align: center;
+}
+
+.background-subtitle {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -229,11 +237,14 @@ a {
   border-bottom: 2px dashed var(--general-use-white);
 }
 
+.background-extra {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .resume-area {
   text-align: center;
   margin: -50 0 0 0;
-  font-size: 2rem;
-  font-weight: bold;
 }
 
 .resume-button {
@@ -433,24 +444,24 @@ footer {
 @media screen and (max-width: 1200px) {
 
   /**navbar**/
-  header {
+  .navigation-ul {
     justify-content: center;
+    margin: 0;
   }
+
   /**main panel**/
   .page-container {
     margin: 0 6rem;
   }
 
-  .name {
-    margin: 0 0 2rem 0;
-  }
+
   /**background panel**/
   .background-container {
     padding: 0;
   }
 
   .background-title {
-    font-size: 1.5rem;
+    font-size: 30px;
   }
   
   .background-subtitle {
@@ -489,3 +500,4 @@ footer {
     margin-top: 200px;
   }
 }
+
