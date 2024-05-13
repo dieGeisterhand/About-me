@@ -459,13 +459,11 @@ footer {
   .background-container {
     padding: 0;
   }
-
-  .background-title {
-    font-size: 30px;
-  }
   
-  .background-subtitle {
+  .background-title {
     margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
   .right-panel,
