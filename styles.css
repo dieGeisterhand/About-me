@@ -95,7 +95,7 @@ a {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   background: linear-gradient(rgb(31, 31, 31), rgb(31, 31, 31), rgb(41, 41, 41));
 }
@@ -174,10 +174,7 @@ a {
 
 .background-title {
   text-align: center;
-}
-
-.background-subtitle {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
@@ -236,6 +233,11 @@ a {
   margin: 50px 0 50px 0;
   border-bottom: 2px dashed var(--general-use-white);
 }
+
+.division-1 {
+  margin-top: 125px;
+}
+
 
 .background-extra {
   font-size: 2rem;
@@ -441,7 +443,7 @@ footer {
 }
 /*****************anything related to the footer**************/
 /***********************media queries*************************/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
 
   /**navbar**/
   .navigation-ul {
@@ -452,6 +454,10 @@ footer {
   /**main panel**/
   .page-container {
     margin: 0 6rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
   }
 
 
@@ -496,6 +502,11 @@ footer {
 
   .division-1 {
     margin-top: 200px;
+  }
+
+  /**projects panel**/
+  .name {
+    font-size: 3rem;
   }
 }
 
