@@ -46,7 +46,27 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: end;
   width: 100%;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  margin-left: 25px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
 }
 
 .navigation-ul {
@@ -102,6 +122,7 @@ a {
 .name {
   font-weight: 300;
   font-size: 58px;
+  margin: 1rem;
 }
 
 .gtlt {
@@ -499,7 +520,8 @@ footer {
 
   /**projects panel**/
   .name {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 1rem;
   }
 }
 
@@ -511,10 +533,6 @@ footer {
     margin: 0;
   }
 
-  .name {
-    font-size: 3rem;
-    margin: 1rem;
-  }
   .subtitle {
     font-size: 1.3rem;
     font-weight: normal;
@@ -562,8 +580,32 @@ footer {
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
 
+  
+    /*navigation bar*/
+    .hamburger {
+      display: flex;
+    }
+  
+    nav {
+      display: none;
+    }
+
+  /*main panel*/
+  .name {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  /*work history panel*/
+  .left-panel,
+  .right-panel {
+    padding: 0;
+  }
 }
 
 

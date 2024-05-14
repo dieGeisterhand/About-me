@@ -12,17 +12,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script defer data-domain="jeyfrem.com" src="https://plausible.io/js/script.js"></script>
+         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
-
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <nav>
-        <ul class="navigation-ul">
+        <ul class="navigation-ul" id="nav-menu">
           <li class="contact-li"><a href="#about" accesskey="a">About</a></li>
           <li class="contact-li"><a href="#background" accesskey="b">Background</a></li>
           <li class="contact-li"><a href="#projects" accesskey="p">Projects</a></li>
           <li class="contact-li"><a href="#contact" accesskey="c">Contact</a></li>
         </ul>
+
+
       </nav>
     </header>
     <main>
@@ -332,5 +340,6 @@
         </ul>
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
