@@ -580,17 +580,26 @@ footer {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
   
     /*navigation bar*/
     .hamburger {
       display: flex;
     }
-  
+    
     nav {
-      display: none;
+      justify-content: start;
+      background-color: var(--nav-bar);
     }
+
+    .navigation-ul {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding-top: 300px;
+    }
+
 
   /*main panel*/
   .name {
