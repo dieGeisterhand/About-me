@@ -580,26 +580,24 @@ footer {
 
 }
 
+
 @media screen and (max-width: 900px) {
-
+  /*navigation bar*/
+  .hamburger {
+    display: flex;
+  }
   
-    /*navigation bar*/
-    .hamburger {
-      display: flex;
-    }
-    
-    nav {
-      justify-content: start;
-      background-color: var(--nav-bar);
-    }
+  nav {
+    justify-content: start;
+    background-color: var(--nav-bar);
+  }
 
-    .navigation-ul {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      padding-top: 300px;
-    }
-
+  .navigation-ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 300px;
+  }
 
   /*main panel*/
   .name {
@@ -617,4 +615,19 @@ footer {
   }
 }
 
+@media screen and (max-width: 480px) {
+  /*main panel*/
+  .name {
+    margin: 0;
+  }
+
+  /*work experience panel*/
+  .background-title {
+    font-size: 1.4rem;
+  }
+
+  .project-boxes-container {
+    padding: 0;
+  }
+}
 
