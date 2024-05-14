@@ -42,7 +42,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 nav {
@@ -499,7 +498,7 @@ footer {
   .work-place {
     font-size: 1.2rem;
   }
-
+  
   .bg {
     font-size: 0.9rem;
   }
@@ -531,6 +530,10 @@ footer {
 
   .page-container {
     margin: 0;
+  }
+
+  .name {
+    font-size: 2.8rem;
   }
 
   .subtitle {
@@ -588,16 +591,24 @@ footer {
   }
   
   nav {
-    justify-content: start;
-    background-color: var(--nav-bar);
+    background-color: rgba(37, 66, 50, 0.8);
   }
 
   .navigation-ul {
     display: none;
     width: 100%;
     flex-direction: column;
-    padding-top: 300px;
+    padding-top: 420px;
+    padding-bottom: 20px;
+    
   }
+
+  .contact-li {
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
 
   /*main panel*/
   .name {
