@@ -55,10 +55,15 @@ nav {
   justify-content: space-between;
   font-size: 1.5rem;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .month {
   display: none;
+  flex-direction: column;
   font-size: 1.5rem;
-  margin: 15px;
+}
+
+.month a {
+  margin: 7.5px;
 }
