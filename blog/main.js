@@ -1,14 +1,29 @@
-const year = document.getElementById("year");
-const month = document.getElementById("month");
+const yearDropdown = document.getElementById("year");
+const monthElement = document.getElementById("month");
 const littleButton = document.getElementById("open-close");
 
-year.addEventListener("click", () => {
-  if (month.style.display === "none") {
-    month.style.display = "flex";
+yearDropdown.addEventListener("click", () => {
+  if (monthElement.style.display === "none") {
+    monthElement.style.display = "flex";
     littleButton.innerHTML = "∧";
     return;
   } else {
-    month.style.display = "none";
+    monthElement.style.display = "none";
     littleButton.innerHTML = "∨"
   }
 })
+
+const retrieveMonth = (clickedElement) => {
+  const monthOption = clickedElement.innerHTML.toLowerCase();
+  return monthOption;
+}
+
+
+const iframeContent = () => {
+  const iframe = document.getElementById("iframe");
+  const month = retrieveMonth(document.querySelector(".month-selection"));
+  
+  if (month === "may") {
+    iframe.setAttribute("src", "https://www.jeyfrem.com/");
+  }
+};

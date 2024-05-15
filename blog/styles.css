@@ -5,18 +5,27 @@
   font-family: monospace;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   background-color: black;
 }
 
 /** navigation bar **/
 
+main {
+  width: 100%;
+  height: 100vh;
+}
 nav {
   display: flex;
   flex-direction: column;
   position: fixed;
   height: 100%;
-  width: 350px;
+  width: 450px;
   padding: 25px;
   background-color: white;
   user-select: none;
@@ -52,18 +61,36 @@ nav {
 
 .year {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 75px;
   font-size: 1.5rem;
   cursor: pointer;
   margin-bottom: 10px;
 }
 
-.month {
+#month {
   display: none;
   flex-direction: column;
   font-size: 1.5rem;
 }
 
-.month a {
+#month a {
   margin: 7.5px;
+  padding: 10px;
+  border-bottom: 2px solid gray;
+}
+
+#month a:last-child {
+  border-bottom: none;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  padding-left: 450px;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
 }

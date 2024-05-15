@@ -26,16 +26,17 @@
         </div>
         <div class="year-month-container">
           <div class="year" id="year">
-            <p>2024</p>
-            <p id="open-close">∨</p>
+            <p>2024 </p>
+            <p id="open-close"> ∨</p>
           </div>
-          <div class="month" id="month">
-            <a>May</a>
-        <!--<a>July</a>-->
+          <div id="month">
+            <!--<a href="#">July</a>-->
+            <a onclick="retrieveMonth(this); iframeContent()" class="month-selection">May</a>
           </div>
         </div>
       </nav>
       <section>
+        <iframe src="../wip.html" id="iframe"></iframe>
       </section>
     </main>
     <script src="main.js"></script>
