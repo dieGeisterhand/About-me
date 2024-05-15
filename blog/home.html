@@ -25,13 +25,25 @@
           <p>Entries</p>
         </div>
         <div class="year-month-container">
-          <div class="year" id="year">
+          <div class="year" data-year="2024">
             <p>2024 </p>
-            <p id="open-close"> ∨</p>
+            <p class="open-close"> ∨</p>
           </div>
-          <div id="month">
-            <!--<a href="#">July</a>-->
-            <a onclick="retrieveMonth(this); iframeContent()" class="month-selection">May</a>
+          <div class="month" style="display: none;">
+            <a class="month-selection">November</a>
+            <a class="month-selection">July</a>
+            <a class="month-selection">May</a>
+          </div>
+
+          <div class="year" data-year="2025">
+            <p>2025 </p>
+            <p class="open-close"> ∨</p>
+          </div>
+          <div class="month" style="display: none;">
+            <a class="month-selection">July</a>
+            <a class="month-selection">April</a>
+            <a class="month-selection">February</a>
+            <a class="month-selection">January</a>
           </div>
         </div>
       </nav>

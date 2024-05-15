@@ -61,27 +61,28 @@ nav {
 
 .year {
   display: flex;
-  justify-content: space-around;
-  width: 75px;
+  justify-content: space-between;
+  width: 100%;
   font-size: 1.5rem;
   cursor: pointer;
   margin-bottom: 10px;
 }
 
-#month {
-  display: none;
+
+.month {
   flex-direction: column;
   font-size: 1.5rem;
 }
 
-#month a {
+.month a {
   margin: 7.5px;
   padding: 10px;
   border-bottom: 2px solid gray;
 }
 
-#month a:last-child {
+.month a:last-child {
   border-bottom: none;
+  margin-bottom: 25px;
 }
 
 section {
