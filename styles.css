@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+span {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+
+.main a {
+  text-decoration: none;
+  color: white;
+  background-color: orangered;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 50px;
+  padding: 25px;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+a:active {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+
+  body {
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 50px;
+    line-height: 3rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact a {
+    margin: 1rem;
+  }
+}
