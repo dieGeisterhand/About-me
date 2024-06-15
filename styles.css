@@ -58,10 +58,9 @@ a:active {
 @media screen and (max-width: 900px) {
   body {
     font-size: 1.5rem;
-    margin-top: 40px;
   }
 
-  p {
+  .main p {
     margin: 25px;
     line-height: 3rem;
   }
